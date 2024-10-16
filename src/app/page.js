@@ -6,6 +6,7 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Products from "./components/Products";
+import WorkingHours from "./components/WorkingHours";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Services></Services>
       <Contact></Contact>
       <Products></Products>
+      <WorkingHours></WorkingHours>
     </div>
   );
 }

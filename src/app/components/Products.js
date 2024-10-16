@@ -7,10 +7,10 @@ import { FaRegStar } from "react-icons/fa";
 
 const Products = () => {
   const products = [
-    { id: 1, title: "New Fresh Wash", bigImage: 'https://html.themeori.net/barbex/assets/img/products/products-1.jpg', price: "$51.39" },
-    { id: 2, title: "New Fresh Wash", bigImage: 'https://html.themeori.net/barbex/assets/img/products/products-2.jpg', price: "$56.00" },
-    { id: 3, title: "New Fresh Wash", bigImage: 'https://html.themeori.net/barbex/assets/img/products/products-3.jpg', price: "$63.87" },
-    { id: 4, title: "New Fresh Wash", bigImage: 'https://html.themeori.net/barbex/assets/img/products/products-4.jpg', price: "$47.89" },
+    { id: 1, title: "New Face Wash", bigImage: 'https://html.themeori.net/barbex/assets/img/products/products-1.jpg', price: "$51.39" },
+    { id: 2, title: "New Face Wash", bigImage: 'https://html.themeori.net/barbex/assets/img/products/products-2.jpg', price: "$56.00" },
+    { id: 3, title: "New Face Wash", bigImage: 'https://html.themeori.net/barbex/assets/img/products/products-3.jpg', price: "$63.87" },
+    { id: 4, title: "New Face Wash", bigImage: 'https://html.themeori.net/barbex/assets/img/products/products-4.jpg', price: "$47.89" },
   ];
 
   return (
