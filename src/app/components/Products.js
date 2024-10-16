@@ -2,6 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import { FaHeart, FaShoppingCart, FaSearch } from 'react-icons/fa';
 import { GrBasket } from 'react-icons/gr';
+import { TbStarFilled } from "react-icons/tb";
+import { FaRegStar } from "react-icons/fa";
 
 const Products = () => {
   const products = [
@@ -35,6 +37,13 @@ const Products = () => {
                 </div>
             </div>
             <div className=" bottom-0 left-0 bg-neutral text-center bg-opacity-75 w-full p-4">
+                <div className='flex text-secondary justify-center text-xl mb-2 mt-2 gap-1'> 
+                    <TbStarFilled/>
+                    <TbStarFilled/>
+                    <TbStarFilled/>
+                    <TbStarFilled/>
+                    <FaRegStar />
+                </div>
                 <h2 className="text-accent text-lg">{product.title}</h2>
                 <p className="text-secondary text-base">{product.price}</p>
             </div>
