@@ -6,6 +6,7 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
 import { GrBasket } from "react-icons/gr";
 import { FaRulerCombined } from "react-icons/fa6";
+import Image from 'next/image';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,8 +16,9 @@ const Navbar = () => {
       <div className="container flex justify-between items-center py-4 px-6 max-w-7xl mx-auto">
         <div className="flex items-center">
           <div className="text-2xl font-bold mr-6 flex justify-center items-center gap-2"> 
-            <FaRulerCombined className='text-neutral bg-secondary' />
-            Barbex
+            <Image src={'https://html.themeori.net/barbex/assets/img/logo.png'} width={100} height={100} alt='Image'></Image>
+            {/* <FaRulerCombined className='text-neutral bg-secondary' />
+            Barbex */}
           </div>
           <div className="hidden md:flex items-center text-sm border-l-2 pl-6 border-white border-opacity-50">
             <FiPhoneCall className="mr-2 border-2 rounded-full border-opacity-30 w-6 h-6 p-[3px]" />

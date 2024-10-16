@@ -9,6 +9,8 @@ import Products from "./components/Products";
 import WorkingHours from "./components/WorkingHours";
 import Review from "./components/Review";
 import Blogs from "./components/Blogs"
+import FollowInsta from "./components/FollowInsta";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +24,8 @@ export default function Home() {
       <WorkingHours></WorkingHours>
       <Review></Review>
       <Blogs></Blogs>
+      <FollowInsta></FollowInsta>
+      <Footer></Footer>
     </div>
   );
 }
