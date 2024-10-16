@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Products from "./components/Products";
 import WorkingHours from "./components/WorkingHours";
 import Review from "./components/Review";
+import Blogs from "./components/Blogs"
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Products></Products>
       <WorkingHours></WorkingHours>
       <Review></Review>
+      <Blogs></Blogs>
     </div>
   );
 }
