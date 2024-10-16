@@ -5,8 +5,8 @@
 @font-face {
   font-family: 'charm';
   src: url('./public//FontsFree-Net-Charm1.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  /* font-weight: normal; */
+  /* font-style: normal; */
 }
 
 body {

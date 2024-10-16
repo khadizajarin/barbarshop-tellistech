@@ -38,7 +38,7 @@ const Navbar = () => {
           </div>
           <Link href="/booking" className="bg-secondary text-neutral px-4 py-2 hidden md:inline-block">
             <button className='flex justify-center items-center lg:gap-2'>
-              Booking Now 
+              BOOKING NOW
               <MdKeyboardDoubleArrowRight className='font-extrabold' />
             </button>
           </Link>
