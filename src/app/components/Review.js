@@ -14,7 +14,7 @@ const Review = () => {
             {/* First Part */}
             <div className="lg:w-1/3 mb-8 lg:mb-0">
                 <h3 className="text-secondary text-sm mb-4">Testimonial</h3>
-                <p className="text-accent text-5xl font-thin mb-8">What Our <br/> Customer Say's</p>
+                <p className="text-accent text-5xl font-thin mb-8">What Our <br/> Customer Say&apos;s</p>
                 <p className={`${inter.className} text-accent text-lg mb-8`}>Barber Trading Style and Proven Strategy to Make a Living</p>
                 <button className='bg-neutral px-4 lg:px-6 py-3 lg:py-5 text-secondary border-secondary border-2 flex justify-center items-center gap-2 '> WRITE REVIEW <MdKeyboardDoubleArrowRight/>  </button>
             </div>
