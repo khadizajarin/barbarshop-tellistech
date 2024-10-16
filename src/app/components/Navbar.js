@@ -11,7 +11,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className='bg-primary text-neutral'>
+    <header className='bg-primary text-neutral border-1 border-neutral border-opacity-25'>
       <div className="container flex justify-between items-center py-4 px-6 max-w-7xl mx-auto">
         <div className="flex items-center">
           <div className="text-2xl font-bold mr-6 flex justify-center items-center gap-2"> 
