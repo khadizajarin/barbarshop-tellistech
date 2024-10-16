@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 const About = () => {
   return (
-    <div className=" flex lg:flex-row flex-col items-center bg-neutral lg:h-[120vh] h-full lg:px-20 ">
+    <div className=" flex lg:flex-row flex-col items-center bg-neutral lg:h-[120vh] h-full lg:px-20 bg-opacity-20">
       <div className=" flex flex-row gap-8 lg:w-2/5 p-5 relative mt-8">
         <div className=" mb-4">
           <Image
