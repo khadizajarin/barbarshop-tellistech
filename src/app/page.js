@@ -7,6 +7,7 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Products from "./components/Products";
 import WorkingHours from "./components/WorkingHours";
+import Review from "./components/Review";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Contact></Contact>
       <Products></Products>
       <WorkingHours></WorkingHours>
+      <Review></Review>
     </div>
   );
 }

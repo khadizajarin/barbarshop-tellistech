@@ -9,7 +9,8 @@ const inter = Inter({ subsets: ['latin'] });
 
 const WorkingHours = () => {
   return (
-    <div className="relative lg:h-[90vh]">
+    <div className='lg:p-20'>
+        <div className="relative lg:h-[90vh] ">
       {/* Background Image with Black Overlay */}
       <div className="absolute inset-0">
         <Image 
@@ -61,6 +62,7 @@ const WorkingHours = () => {
           </button>
         </div>
       </div>
+    </div>
     </div>
   );
 };
