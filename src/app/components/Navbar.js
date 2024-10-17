@@ -20,7 +20,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className='bg-accent text-neutral border-1 border-neutral z-50 fixed top-0 left-0 right-0 lg:px-10 px-2'>
+    <header className='bg-accent text-neutral border-1 border-neutral z-50 fixed  top-0 left-0 right-0 lg:px-10 px-2'>
       <div className="container h-24 flex justify-between items-center py-4 px-6">
         <div className="flex items-center">
           <div className="text-2xl font-bold mr-6 flex justify-center items-center gap-2"> 

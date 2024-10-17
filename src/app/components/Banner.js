@@ -42,10 +42,11 @@ const Banner = () => {
             className="relative min-w-full flex flex-col lg:flex-row bg-no-repeat bg-cover"
             style={{ backgroundImage: `url(${slide.bgimage})` }}
           >
+            {/* transparent overlay */}
             <div className="absolute inset-0 z-0">
-              <div className="absolute inset-0 bg-black opacity-80"></div> Transparent overlay
+              <div className="absolute inset-0 bg-black opacity-80"></div>
             </div>
-            <div className="w-full lg:flex-grow pl-4 lg:pl-10 pb-12 lg:pb-48 flex flex-col items-start justify-center relative z-20 ml-0 lg:ml-16 mt-20 lg:mt-0">
+            <div className="w-full lg:flex-grow pl-4 lg:pl-10 pb-12 lg:pb-48 flex flex-col items-start justify-center relative z-20 ml-0 lg:ml-16 mt-20 lg:mt-36">
               <h5 className="text-lg lg:text-xl font-medium text-secondary mb-2 lg:mb-4">Welcome to Our Barbex</h5>
               <h2 className="text-3xl lg:text-7xl font-medium text-neutral tracking-wide">{slide.heading}</h2>
               <div className='flex flex-col lg:flex-row gap-3 lg:gap-5 mt-4 lg:mt-8'>

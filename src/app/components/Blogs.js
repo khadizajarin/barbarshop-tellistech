@@ -40,17 +40,14 @@ const CardSection = () => {
           {/* Foreground Content */}
           <div className="relative z-10 text-center">
             <p className="text-base text-secondary mb-2">Blog and Article</p>
-            <h1 className="tlg:ext-6xl text-5xl font-extralight text-accent mb-8">Read Our BLog and News</h1>
+            <h1 className="tlg:ext-6xl text-5xl font-extralight text-accent mb-8">Read Our Blog and News</h1>
           </div>
         </div>
 
 
-      {/* <p className="text-base text-secondary mb-2 text-center "></p>
-      <h1 className="text-4xl lg:text-6xl font-extralight text-accent mb-10 text-center px-8"></h1> */}
-
-     <div className="container p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:px-20 items-center w-full">
+     <div className="container mx-auto p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:px-10 items-center justify-center ">
         {cards.map(card => (
-          <div key={card.id} className="bg-white border-2 border-accent border-opacity-30 overflow-hidden">
+          <div key={card.id} className="bg-neutral border-2 border-accent border-opacity-30 lg:w-[24rem] lg:h-[30rem] overflow-hidden">
             <Image 
               src={card.imageUrl} 
               alt={card.title} 
