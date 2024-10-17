@@ -45,7 +45,7 @@ const CardSection = () => {
         </div>
 
 
-     <div className="container mx-auto p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:px-10 items-center justify-center ">
+     <div className="container lg:max-w-[80rem] lg:mx-auto p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:px-10 items-center justify-center ">
         {cards.map(card => (
           <div key={card.id} className="bg-neutral border-2 border-accent border-opacity-30 lg:w-[24rem] lg:h-[30rem] overflow-hidden">
             <Image 
