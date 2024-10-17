@@ -31,7 +31,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="relative w-full bg-accent overflow-hidden">
+    <div className="relative w-full bg-accent overflow-hidden lg:pt-20 pt-10">
       <div
         className="flex transition-transform duration-900"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}

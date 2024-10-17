@@ -14,8 +14,8 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div>
-      <Navbar></Navbar>
+    <div className="">
+      <Navbar className=""></Navbar>
       <Banner></Banner>
       <About></About>
       <Services></Services>

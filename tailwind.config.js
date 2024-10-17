@@ -22,7 +22,7 @@ module.exports = {
         anime: {
           "primary": "#6B6D6D",
           "secondary": "#B48E40",
-          "accent": "#202323",
+          "accent": "#0F1212",
           "neutral": "#F7F7F7",
           "base-100": "#ffffff",
         },

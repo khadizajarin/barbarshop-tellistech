@@ -16,9 +16,20 @@ const Products = () => {
   return (
     <div className='bg-neutral'>
         {/* HeadLine */}
-      <p className="text-base text-secondary mb-2 text-center lg:pt-56 pt-20">Our Products</p>
-      <h1 className="text-4xl lg:text-6xl font-extralight text-accent mb-10  text-center px-8">Evoke the experience of one of our  <br /> barber shops</h1>
 
+        <div className="relative lg:pt-40 pt-10">
+          {/* Background Text */}
+          <div className="absolute top-0 right-0 left-0 lg: bottom-0 flex justify-center items-center z-0">
+            <p className="lg:text-[12rem] text-7xl text-gray-400 opacity-20 transform ">Products</p>
+          </div>
+          
+          {/* Foreground Content */}
+          <div className="relative z-10 text-center">
+            <p className="text-base text-secondary mb-2">Our Products</p>
+            <h1 className="tlg:ext-6xl text-5xl font-extralight text-accent mb-8">Evoke the experience of one of our <br/> barber shops</h1>
+          </div>
+        </div>
+        {/* products */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-center items-center lg:p-20 p-10">
         {products.map((product) => (
             <div key={product.id} className="relative group">

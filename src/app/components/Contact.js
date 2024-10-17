@@ -5,7 +5,7 @@ import { FiPhoneCall } from "react-icons/fi";
 
 const Contact = () => {
   return (
-    <div className="relative flex lg:flex-row flex-col justify-center items-center gap-10  lg:h-[80vh] px-40 ">
+    <div className="relative flex lg:flex-row flex-col justify-center items-center gap-10  lg:h-[80vh] lg:px-40 ">
       {/* Background Image with Black Overlay */}
       <Image 
         src={image6}
@@ -16,9 +16,19 @@ const Contact = () => {
       />
       <div className="absolute inset-0 bg-black opacity-85 z-10"></div>
 
-      <div className="relative z-20 p-6 lg:w-3/5 mt-8 text-center lg:text-left">
-        <p className="text-base text-secondary mb-2">Booking Now</p>
-        <h1 className="text-4xl font-extralight text-neutral mb-10">Book your appointment online And call our salon</h1>
+      <div className="relative z-20 lg:p-6 pl-4 lg:w-3/5 mt-8 text-left">
+        <div className="relative">
+          {/* Background Text */}
+          <div className="absolute top-0 bottom-16 flex lg:justify-start lg:items-start z-0">
+            <p className="lg:text-[12rem] text-7xl text-gray-400 opacity-20 transform ">Booking</p>
+          </div>
+          
+          {/* Foreground Content */}
+          <div className="relative z-10">
+            <p className="text-base text-secondary mb-2">Booking Now</p>
+            <h1 className="lg:text-6xl text-4xl font-extralight text-neutral mb-8">Book your appointment online And call our salon</h1>
+          </div>
+        </div>
         <button className="bg-secondary px-4 lg:px-6 py-3 lg:py-5 flex justify-center items-center gap-2 text-neutral">
           BOOKING APPOINTMENT <MdKeyboardDoubleArrowRight />
         </button>

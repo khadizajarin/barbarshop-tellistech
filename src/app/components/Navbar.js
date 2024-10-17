@@ -12,8 +12,8 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className='bg-primary text-neutral border-1 border-neutral border-opacity-25'>
-      <div className="container flex justify-between items-center py-4 px-6 max-w-7xl mx-auto">
+    <header className='bg-accent  text-neutral border-1 border-neutral z-50 fixed top-0 left-0 right-0'>
+      <div className="container h-24 flex justify-between items-center py-4 px-6 max-w-7xl mx-auto">
         <div className="flex items-center">
           <div className="text-2xl font-bold mr-6 flex justify-center items-center gap-2"> 
             <Image src={'https://html.themeori.net/barbex/assets/img/logo.png'} width={100} height={100} alt='Image'></Image>

@@ -13,14 +13,26 @@ const Review = () => {
         <div className="container lg:max-w-7xl lg:mx-auto lg:h-[80vh] p-8 lg:flex lg:space-x-12 bg-neutral lg:flex-row flex-col items-center justify-center ">
             {/* First Part */}
             <div className="lg:w-1/3 mb-8 lg:mb-0">
-                <h3 className="text-secondary text-sm mb-4">Testimonial</h3>
-                <p className="text-accent text-5xl font-thin mb-8">What Our <br/> Customer Say&apos;s</p>
+            <div className="relative">
+                {/* Background Text */}
+                <div className="absolute top-0 left-0 flex justify-start items-start z-0">
+                    <p className="lg:text-[12rem] text-5xl text-gray-400 opacity-20 transform ">Testimonial</p>
+                </div>
+                
+                {/* Foreground Content */}
+                <div className="relative z-10">
+                    <p className="text-base text-secondary mb-2">Testimonial</p>
+                    <h1 className="text-6xl font-extralight text-accent mb-8">What Our <br/> Customer Say&apos;sn</h1>
+                </div>
+                </div>
+                {/* <h3 className="text-secondary text-sm mb-4"></h3>
+                <p className="text-accent text-5xl font-thin mb-8"></p> */}
                 <p className={`${inter.className} text-accent text-lg mb-8`}>Barber Trading Style and Proven Strategy to Make a Living</p>
                 <button className='bg-neutral px-4 lg:px-6 py-3 lg:py-5 text-secondary border-secondary border-2 flex justify-center items-center gap-2 '> WRITE REVIEW <MdKeyboardDoubleArrowRight/>  </button>
             </div>
 
             {/* Second Part */}
-            <div className="lg:w-1/3 ">
+            <div className="lg:w-1/3 z-20">
                 <div className="bg-white shadow-lg p-4 flex flex-col justify-center items-center h-96 mb-8 lg:mb-0">
                     <Image
                         src={'https://html.themeori.net/barbex/assets/img/avatar/testimonial-1.jpg'}
@@ -45,7 +57,7 @@ const Review = () => {
             </div>
 
             {/* Third Part */}
-            <div className="lg:w-1/3 ">
+            <div className="lg:w-1/3 z-20">
                 <div className="bg-white shadow-lg p-4 flex flex-col justify-center items-center h-96">
                     <Image
                         src={'https://html.themeori.net/barbex/assets/img/avatar/testimonial-2.jpg'}

@@ -33,9 +33,19 @@ const Services = () => {
   return (
     <div className="bg-neutral lg:p-20 lg:pt-40">
       {/* HeadLine */}
-      <p className="text-base text-secondary mb-2 text-center">Our Services</p>
-      <h1 className="text-4xl lg:text-6xl font-extralight text-accent mb-10 text-center">Popular Hair Cutting <br /> And salon</h1>
-
+      <div className="relative">
+          {/* Background Text */}
+          <div className="absolute top-0 right-0 left-0 bottom-16 flex justify-center items-center z-0">
+            <p className="lg:text-[12rem] text-7xl text-gray-400 opacity-20 transform ">Services</p>
+          </div>
+          
+          {/* Foreground Content */}
+          <div className="relative z-10 text-center">
+            <p className="text-base text-secondary mb-2">Our Services</p>
+            <h1 className="tlg:ext-6xl text-5xl font-extralight text-accent mb-8">Popular Hair Cutting <br/> And Salon</h1>
+          </div>
+        </div>
+        
       {/* 6 boxes */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-8 lg:w-full">
         {boxes.map((box) => (

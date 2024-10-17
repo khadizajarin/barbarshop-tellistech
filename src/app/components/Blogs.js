@@ -30,8 +30,23 @@ const CardSection = () => {
 
   return (
     <div className=''>
-      <p className="text-base text-secondary mb-2 text-center lg:pt-28 pt-10">Blog and Article</p>
-      <h1 className="text-4xl lg:text-6xl font-extralight text-accent mb-10 text-center px-8">Read Our BLog and News</h1>
+
+        <div className="relative lg:pt-24 pt-10">
+          {/* Background Text */}
+          <div className="absolute top-0 right-0 left-0  flex justify-center items-center z-0">
+            <p className="lg:text-[12rem] text-7xl text-gray-400 opacity-20 transform ">Blogs</p>
+          </div>
+          
+          {/* Foreground Content */}
+          <div className="relative z-10 text-center">
+            <p className="text-base text-secondary mb-2">Blog and Article</p>
+            <h1 className="tlg:ext-6xl text-5xl font-extralight text-accent mb-8">Read Our BLog and News</h1>
+          </div>
+        </div>
+
+
+      {/* <p className="text-base text-secondary mb-2 text-center "></p>
+      <h1 className="text-4xl lg:text-6xl font-extralight text-accent mb-10 text-center px-8"></h1> */}
 
      <div className="container p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:px-20">
         {cards.map(card => (

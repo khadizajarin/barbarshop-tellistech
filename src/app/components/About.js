@@ -44,8 +44,18 @@ const About = () => {
         </div>
       </div>
       <div className="p-6 lg:w-3/5 lg:pl-28 mt-8"> 
-        <p className="text-base text-secondary mb-2">About Us</p>
-        <h1 className="text-6xl font-extralight text-accent mb-8 ">Best Haircut Salons For Men Women</h1>
+        <div className="relative">
+          {/* Background Text */}
+          <div className="absolute top-0  flex justify-start items-start z-0">
+            <p className="lg:text-[12rem] text-7xl text-gray-400 opacity-20 transform ">ABOUT</p>
+          </div>
+          
+          {/* Foreground Content */}
+          <div className="relative z-10">
+            <p className="text-base text-secondary mb-2">About Us</p>
+            <h1 className="text-6xl font-extralight text-accent mb-8">Best Haircut Salons For Men Women</h1>
+          </div>
+        </div>
         <p className={`${inter.className} text-lg text-gray-600 mb-9 lg:pr-28`}>
         Haircut is a term used to describe when a person removes the hair on their head. This is done to allow for better access to the part of the body that needs cutting.
         </p>
