@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Barbex / Hair Salon Home Page
+
+## Project Description
+
+This project is a frontend development task to implement a home page for a barbershop/hair salon using Next.js and Tailwind CSS. The design is based on a Figma template, and the implementation follows best practices in frontend development. The website should be responsive and mobile-friendly, with optional animations to enhance user experience. 
+
+## Technologies Used
+
+- **Framework:** Next.js
+- **Styling:** Tailwind CSS
+- **Deployment:** [Deployed Link](https://barbarshop-tellistech.netlify.app/)
+- **Source Code:** [GitHub Repository](https://github.com/khadizajarin/barbarshop-tellistech) 
+
+## Features
+
+- Responsive design that works on both desktop and mobile devices.
+- Clean and maintainable code with a proper folder structure.
+- Optional animations for enhanced user experience.
+- Usage of images from the provided reference website.
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running, follow these simple steps.
 
+### Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js
+- npm (Node package manager) or yarn
+
+### Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/khadizajarin/barbarshop-tellistech <!-- Add your GitHub repository URL here -->
+    cd barbarshop-tellistech
+    ```
+
+2. Install the dependencies:
+    ```bash
+    npm install
+    ```
+
+### Running the Development Server
+
+To start the development server, run:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To create an optimized production build, run:
+```bash
+npm run build
 
-## Learn More
+```
+Then, you can start the production server:
+```bash
+npm start
+```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The application is deployed and can be accessed [here](https://barbarshop-tellistech.netlify.app/). 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Folder Structure
 
-## Deploy on Vercel
+```plaintext
+.
+├── public          # Static files
+├── src
+│   ├── components  # React components
+│   ├── pages       # Next.js pages
+│   └── ...         # Additional folders as needed
+├── .gitignore      # Git ignore file
+├── README.md       # Project documentation
+├── next.config.js  # Next.js configuration
+├── package.json    # Project dependencies and scripts
+└── tailwind.config.js  # Tailwind CSS configuration
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+
+For any questions or inquiries, please reach out to Tellis Technologies.
