@@ -34,7 +34,7 @@ const CardSection = () => {
         <div className="relative lg:pt-24 pt-10">
           {/* Background Text */}
           <div className="absolute top-0 right-0 left-0  flex justify-center items-center z-0">
-            <p className="lg:text-[12rem] text-7xl text-gray-400 opacity-20 transform ">Blogs</p>
+            <p className="lg:text-[12rem] text-7xl text-gray-400 opacity-10 transform ">Blogs</p>
           </div>
           
           {/* Foreground Content */}
@@ -48,7 +48,7 @@ const CardSection = () => {
       {/* <p className="text-base text-secondary mb-2 text-center "></p>
       <h1 className="text-4xl lg:text-6xl font-extralight text-accent mb-10 text-center px-8"></h1> */}
 
-     <div className="container p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:px-20">
+     <div className="container p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:px-20 items-center w-full">
         {cards.map(card => (
           <div key={card.id} className="bg-white border-2 border-accent border-opacity-30 overflow-hidden">
             <Image 

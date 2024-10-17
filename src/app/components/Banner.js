@@ -1,8 +1,8 @@
-"use client"
+"use client";
 import Image from 'next/image';
 import { useState } from 'react';
-import image1 from "@/assets/image1.png"
-import image2 from "@/assets/image2.png"
+import image1 from "@/assets/image1.png";
+import image2 from "@/assets/image2.png";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
@@ -42,13 +42,19 @@ const Banner = () => {
             className="relative min-w-full flex flex-col lg:flex-row bg-no-repeat bg-cover"
             style={{ backgroundImage: `url(${slide.bgimage})` }}
           >
-            <div className="absolute inset-0 bg-black opacity-80"></div> {/* Transparent overlay */}
-            <div className="w-full lg:flex-grow pl-4 lg:pl-10 pb-12 lg:pb-48 flex flex-col items-start justify-center relative z-10 ml-0 lg:ml-16 mt-20 lg:mt-0">
+            <div className="absolute inset-0 z-0">
+              <div className="absolute inset-0 bg-black opacity-80"></div> Transparent overlay
+            </div>
+            <div className="w-full lg:flex-grow pl-4 lg:pl-10 pb-12 lg:pb-48 flex flex-col items-start justify-center relative z-20 ml-0 lg:ml-16 mt-20 lg:mt-0">
               <h5 className="text-lg lg:text-xl font-medium text-secondary mb-2 lg:mb-4">Welcome to Our Barbex</h5>
               <h2 className="text-3xl lg:text-7xl font-medium text-neutral tracking-wide">{slide.heading}</h2>
               <div className='flex flex-col lg:flex-row gap-3 lg:gap-5 mt-4 lg:mt-8'>
-                <button className='bg-secondary px-4 lg:px-6 py-3 lg:py-5 flex justify-center items-center gap-2 text-neutral'>READ MORE <MdKeyboardDoubleArrowRight/>  </button>
-                <button className='bg-transparent px-4 lg:px-6 py-3 lg:py-5 border-secondary border-2 text-secondary flex justify-center items-center gap-2'>VIEW ALL SERVICES <MdKeyboardDoubleArrowRight/>  </button>
+                <button className='bg-secondary px-4 lg:px-6 py-3 lg:py-5 flex justify-center items-center gap-2 text-neutral'>
+                  READ MORE <MdKeyboardDoubleArrowRight />
+                </button>
+                <button className='bg-transparent px-4 lg:px-6 py-3 lg:py-5 border-secondary border-2 text-secondary flex justify-center items-center gap-2'>
+                  VIEW ALL SERVICES <MdKeyboardDoubleArrowRight />
+                </button>
               </div>
             </div>
             <div className="w-full lg:flex-grow pt-10 lg:pt-20 h-full relative z-10">

@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { FaInstagram } from "react-icons/fa";
 import { BsHandIndexThumb } from "react-icons/bs";
 import { Inter } from "next/font/google";
+import bgimg from "@/assets/image14.png";
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -62,19 +63,27 @@ const FollowInsta = () => {
         </div>
         
         {/* Input and Submit Button */}
-        <div className="flex items-center h-20  ">
+        <div className="flex items-center h-16  ">
           <input
             type="text"
             placeholder="Email Address"
-            className={`${inter.className} lg:px-4 px-2 py-2 border-[1px] bg-transparent border-opacity-25 border-secondary h-20 lg:w-[30rem] text-xl leading-relaxed`}
+            className={`${inter.className} lg:px-4 px-2 py-2 border-[1px] bg-transparent border-opacity-25 border-secondary h-16 lg:w-[30rem] text-xl leading-relaxed`}
           />
-          <button className="px-4 py-2 bg-secondary text-neutral h-20 w-20 flex justify-center items-center">
-            <BsHandIndexThumb className='lg:w-6 lg:h-6 w-4 h-4' />
+          <button className="px-4 py-2 bg-secondary text-neutral h-16 w-16 flex justify-center items-center">
+            <BsHandIndexThumb className='lg:w-5 lg:h-5 w-4 h-4' />
           </button>
         </div>
       </div>
 
-      
+      {/* bg scissors */}
+      <Image 
+            src={bgimg}
+            width={500}
+            height={300}
+            alt="Background"
+            objectFit="cover"
+            className="z-10 absolute lg:-bottom-12 bottom-0 lg:left-12  lg:w-1/5 w-full "
+          />
     </div>
   );
 };

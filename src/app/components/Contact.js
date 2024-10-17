@@ -20,7 +20,7 @@ const Contact = () => {
         <div className="relative">
           {/* Background Text */}
           <div className="absolute top-0 bottom-16 flex lg:justify-start lg:items-start z-0">
-            <p className="lg:text-[12rem] text-7xl text-gray-400 opacity-20 transform ">Booking</p>
+            <p className="lg:text-[12rem] text-7xl text-gray-400 opacity-10 transform ">Booking</p>
           </div>
           
           {/* Foreground Content */}
@@ -34,7 +34,7 @@ const Contact = () => {
         </button>
       </div>
 
-      <div className="relative z-20 flex justify-center  lg:justify-end lg:w-2/5 p-6 lg:mt-8">
+      <div className="relative z-20 flex justify-center items-center h-full lg:justify-end lg:w-2/5 p-6 lg:mt-8">
         <div className="bg-neutral w-64 h-64 p-4 flex flex-col items-center justify-center  cursor-pointer mx-8">
           <FiPhoneCall className="mr-2 text-secondary bg-secondary bg-opacity-25 w-16 h-16 p-4 rounded-full mb-6" />
           <h2 className="text-base text-center">Call Now</h2>

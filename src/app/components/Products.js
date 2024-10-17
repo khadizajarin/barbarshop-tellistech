@@ -17,10 +17,10 @@ const Products = () => {
     <div className='bg-neutral'>
         {/* HeadLine */}
 
-        <div className="relative lg:pt-40 pt-10">
+        <div className="relative lg:pt-28 pt-10">
           {/* Background Text */}
-          <div className="absolute top-0 right-0 left-0 lg: bottom-0 flex justify-center items-center z-0">
-            <p className="lg:text-[12rem] text-7xl text-gray-400 opacity-20 transform ">Products</p>
+          <div className="absolute top-0 right-0 left-0 lg:bottom-0 flex justify-center items-center z-0">
+            <p className="lg:text-[12rem] text-7xl text-gray-400 opacity-10 transform ">Products</p>
           </div>
           
           {/* Foreground Content */}
@@ -29,10 +29,12 @@ const Products = () => {
             <h1 className="tlg:ext-6xl text-5xl font-extralight text-accent mb-8">Evoke the experience of one of our <br/> barber shops</h1>
           </div>
         </div>
+
+
         {/* products */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-center items-center lg:p-20 p-10">
         {products.map((product) => (
-            <div key={product.id} className="relative group">
+            <div key={product.id} className="relative flex flex-col  h-full justify-center items-center w-full">
             <Image 
                 src={product.bigImage}
                 alt={product.title}

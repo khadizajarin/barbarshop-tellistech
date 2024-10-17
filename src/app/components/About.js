@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 const About = () => {
   return (
-    <div className=" flex lg:flex-row flex-col items-center bg-neutral lg:h-[120vh] h-full lg:px-20 bg-opacity-20">
+    <div className=" flex lg:flex-row flex-col items-center bg-neutral lg:h-[100vh] h-full lg:px-20 bg-opacity-20 mb-16 ">
       <div className=" flex flex-row gap-8 lg:w-2/5 p-5 relative mt-8">
         <div className=" mb-4">
           <Image
@@ -47,7 +47,7 @@ const About = () => {
         <div className="relative">
           {/* Background Text */}
           <div className="absolute top-0  flex justify-start items-start z-0">
-            <p className="lg:text-[12rem] text-7xl text-gray-400 opacity-20 transform ">ABOUT</p>
+            <p className="lg:text-[12rem] text-7xl text-gray-400 opacity-10 transform ">ABOUT</p>
           </div>
           
           {/* Foreground Content */}

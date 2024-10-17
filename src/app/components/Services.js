@@ -10,6 +10,7 @@ import image9 from "@/assets/image9.png";
 import image10 from "@/assets/image10.png";
 import image11 from "@/assets/image11.png";
 import { FaRegCircleCheck } from "react-icons/fa6";
+import bgimg from "@/assets/image12.png";
 
 
 const inter = Inter({ subsets: ['latin'] });
@@ -31,18 +32,19 @@ const Services = () => {
   };
 
   return (
-    <div className="bg-neutral lg:p-20 lg:pt-40">
+    <div className="bg-neutral lg:p-20 lg:pt-28 pt-12 relative">
+
       {/* HeadLine */}
       <div className="relative">
           {/* Background Text */}
           <div className="absolute top-0 right-0 left-0 bottom-16 flex justify-center items-center z-0">
-            <p className="lg:text-[12rem] text-7xl text-gray-400 opacity-20 transform ">Services</p>
+            <p className="lg:text-[12rem] text-7xl text-gray-400 opacity-10 transform ">Services</p>
           </div>
           
           {/* Foreground Content */}
           <div className="relative z-10 text-center">
             <p className="text-base text-secondary mb-2">Our Services</p>
-            <h1 className="tlg:ext-6xl text-5xl font-extralight text-accent mb-8">Popular Hair Cutting <br/> And Salon</h1>
+            <h1 className="lg:text-6xl text-5xl font-extralight text-accent mb-8">Popular Hair Cutting <br/> And Salon</h1>
           </div>
         </div>
         
@@ -67,15 +69,17 @@ const Services = () => {
       </div>
 
       {/* Bottom Hero */}
-      <div className='flex lg:flex-row flex-col mt-20'>
+      <div className='flex lg:flex-row flex-col justify-center items-center mt-20 relative'>
         <Image
           src={selectedBox.bigImage}
           alt={selectedBox.title}
           width={400}
           height={500}
-          className="mb-6 lg:w-1/2"
+          className="mb-6 lg:w-1/2 "
         />
-        <div className="p-6 lg:w-1/2 lg:pl-28">
+
+        <div className="p-6 lg:w-1/2 lg:pl-28"> 
+          {/* content */}
           <h1 className="text-2xl lg:text-4xl font-extralight text-accent mb-8">Best Facial Hair Trim At Home Treatment
           </h1>
           <p className={`${inter.className} text-lg text-gray-600 mb-9 `}>
@@ -91,7 +95,19 @@ const Services = () => {
            BOOKING APPOINTMENT <MdKeyboardDoubleArrowRight />
           </button>
         </div>
+
+        
       </div>
+       {/* bg scissors */}
+       <Image 
+            src={bgimg}
+            width={500}
+            height={300}
+            alt="Background"
+            objectFit="cover"
+            className="z-10 absolute bottom-0 right-0 lg:w-1/3 w-full"
+          />
+
     </div>
   );
 };
